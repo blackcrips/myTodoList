@@ -14,11 +14,14 @@ function TaskList() {
   ];
 
   return (
-    <ul>
-      {tasksItemsList.map((task, index) => {
-        return <Task key={index} taskName={task} />;
-      })}
-    </ul>
+    <div>
+      <input className="task-input" />
+      <ul>
+        {tasksItemsList.map((task, index) => {
+          return <Task key={index} taskName={task} />;
+        })}
+      </ul>
+    </div>
   );
 }
 
